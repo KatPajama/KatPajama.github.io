@@ -1,8 +1,8 @@
-// Function to increase the text siz
+// Function to increase the text size
 function makeBigger() {
     alert("Hello, world!");
     var textInput = document.getElementById("mainText");
-    // Setting style to 24pt as requested
+    // Set 24pt 
     textInput.style.fontSize = "24pt";
 }
 
