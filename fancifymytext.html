@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fancify Shamcify</title>
+        <!-- Link external JS file -->
+        <script src="fancifymytext.js"></script>
+    </head>
+
+    <body>
+        <h1>Fancify my Text</h1>
+        
+        <fieldset>
+            <legend>Text</legend>
+            <!-- id JS can access the value -->
+            <textarea id="mainText" rows="4" cols="30" placeholder="Enter text here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fancify</legend>
+            <!-- onclick to trigger the bigger function -->
+            <button id="biggerBtn" onclick="makeBigger()">Bigger!</button>
+            
+            <!-- id and onchange for style toggling -->
+            <label>
+                <input type="radio" id="fancy" name="fancifyStyle" onchange="changeStyle()"> FancyShmancy
+            </label>
+            
+            <label>
+                <input type="radio" id="boring" name="fancifyStyle" onchange="changeStyle()"> BoringBetty
+            </label>
+
+            <!-- New button for the Moo task -->
+            <button onclick="mooText()">Moo</button>
+        </fieldset>
+        
+    </body>
+</html>
